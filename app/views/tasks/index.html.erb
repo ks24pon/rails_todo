@@ -9,7 +9,9 @@
     <% @tasks.each do |task| %>
       <tr>
         <td><%= task.title %></td>
+        <td><%= link_to "編集" %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
+<%= link_to "追加", tasks_new_path %>
